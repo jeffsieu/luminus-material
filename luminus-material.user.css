@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Luminus Material Retheme
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.0.1
 @description    Adds Material Design icons and MD elements to module drawer in LumiNUS 
 @author         Jeff Sieu
 ==/UserStyle== */
@@ -32,9 +32,6 @@
     -webkit-font-smoothing: antialiased;
   }
 
-  span {
-    /*     font-family: "Roboto", sans-serif; */
-  }
   h1,
   h2,
   h3,
@@ -47,7 +44,6 @@
   nav a,
   nav a span {
     font-family: "Google Sans", sans-serif;
-    font-weight: normal;
   }
 
   aside header header h1 span {
@@ -87,6 +83,13 @@
     font-size: 12px !important;
   }
 
+  course-module-tool a {
+    padding-top: 4px !important;
+    height: 40px !important;
+    vertical-align: middle;
+    text-align: bottom;
+  }
+
   nav.pills a:before {
     font-family: "Material Icons";
     font-weight: normal;
@@ -103,6 +106,7 @@
     -webkit-font-smoothing: antialiased;
     vertical-align: middle;
     padding-bottom: 4px;
+    padding-top: 2px;
     margin-right: 16px;
   }
 
