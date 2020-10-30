@@ -1,0 +1,193 @@
+/* ==UserStyle==
+@name           Luminus Material Retheme
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    Adds Material Design icons and MD elements to module drawer in LumiNUS 
+@author         Jeff Sieu
+==/UserStyle== */
+
+@-moz-document domain("luminus.nus.edu.sg") {
+  /* fallback */
+  @font-face {
+    font-family: "Material Icons";
+    font-style: normal;
+    font-weight: 400;
+    src: url(https://fonts.gstatic.com/s/materialiconsoutlined/v27/gok-H7zzDkdnRel8-DQ6KAXJ69wP1tGnf4ZGhUce.woff2)
+      format("woff2");
+  }
+
+  .material-icons {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+  }
+
+  span {
+    /*     font-family: "Roboto", sans-serif; */
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: "Google Sans", sans-serif;
+  }
+
+  nav a,
+  nav a span {
+    font-family: "Google Sans", sans-serif;
+    font-weight: normal;
+  }
+
+  aside header header h1 span {
+    font-weight: normal;
+  }
+
+  section.single-module aside header {
+    padding-bottom: 24px !important;
+  }
+
+  section.single-module nav h3:first-child {
+    display: none;
+  }
+
+  section.single-module .margin-bottom-10 {
+    border-top: 1px solid grey;
+    padding-top: 16px;
+    margin-top: 16px;
+    margin-bottom: 0px !important;
+  }
+
+  nav.pills a,
+  nav-pills .pills > h3,
+  aside header {
+    padding-left: 24px !important;
+  }
+
+  @media (min-width: 1200px) {
+    .subapplication-navigation,
+    .main-nav {
+      padding-left: 24px !important;
+      padding-right: 24px !important;
+    }
+  }
+
+  nav-pills .pills > h3 {
+    font-size: 12px !important;
+  }
+
+  nav.pills a:before {
+    font-family: "Material Icons";
+    font-weight: normal;
+    font-style: normal;
+    font-size: 24px;
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+    vertical-align: middle;
+    padding-bottom: 4px;
+    margin-right: 16px;
+  }
+
+  nav.pills a[href^="/modules"]:before {
+    content: "dashboard";
+  }
+
+  nav.pills a[href$="/details"]:before {
+    content: "info";
+  }
+
+  nav.pills a[href$="/groups"]:before {
+    content: "groups";
+  }
+
+  nav.pills a[href$="/task"]:before {
+    content: "assignment_turned_in";
+  }
+
+  nav.pills a[href$="/announcements"]:before {
+    content: "announcement";
+  }
+
+  nav.pills a[href$="/chat"]:before {
+    content: "chat";
+  }
+
+  nav.pills a[href$="/conferencing"]:before {
+    content: "video_call";
+  }
+
+  nav.pills a[href$="/consultation"]:before {
+    content: "live_help";
+  }
+
+  nav.pills a[href$="/files"]:before {
+    content: "folder";
+  }
+
+  nav.pills a[href$="/forum"]:before {
+    content: "forum";
+  }
+
+  nav.pills a[href$="/gradebook"]:before {
+    content: "grading";
+  }
+
+  nav.pills a[href$="/multimedia"]:before {
+    content: "movie";
+  }
+
+  nav.pills a[href$="/poll"]:before {
+    content: "poll";
+  }
+
+  nav.pills a[href$="/quiz"]:before {
+    content: "fact_check";
+  }
+
+  nav.pills a[href$="/survey"]:before {
+    content: "assignment";
+  }
+
+  nav.pills a[href$="/scorm"]:before {
+    content: "school";
+  }
+
+  nav.pills a[href$="/web-lectures"]:before {
+    content: "web";
+  }
+
+  nav.pills a[href$="/ext-app"]:before {
+    content: "build";
+  }
+
+  nav.pills a.selected,
+  nav.pills a:hover {
+    border-radius: 0 100px 100px 0;
+  }
+
+  nav.pills.vertical h3.color-blue {
+    color: var(--textSecondaryColor, #454545) !important;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+    margin-top: 24px;
+    font-weight: normal;
+  }
+}
