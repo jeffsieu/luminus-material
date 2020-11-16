@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           Luminus Material Retheme
 @namespace      github.com/openstyles/stylus
-@version        1.0.1
+@version        1.0.2
 @description    Adds Material Design icons and MD elements to module drawer in LumiNUS 
 @author         Jeff Sieu
 ==/UserStyle== */
@@ -65,13 +65,17 @@
     margin-bottom: 0px !important;
   }
 
-  nav.pills a,
-  nav-pills .pills > h3,
+  nav.pills.vertical a,
+  nav-pills.vertical .pills > h3,
   aside header {
     padding-left: 24px !important;
   }
 
   @media (min-width: 1200px) {
+    aside form {
+      padding-left: 24px !important;
+    }
+
     .subapplication-navigation,
     .main-nav {
       padding-left: 24px !important;
@@ -90,7 +94,7 @@
     text-align: bottom;
   }
 
-  nav.pills a:before {
+  nav.pills.vertical a:before {
     font-family: "Material Icons";
     font-weight: normal;
     font-style: normal;
@@ -110,80 +114,80 @@
     margin-right: 16px;
   }
 
-  nav.pills a[href^="/modules"]:before {
+  nav.pills.vertical a[href^="/modules"]:before {
     content: "dashboard";
   }
 
-  nav.pills a[href$="/details"]:before {
+  nav.pills.vertical a[href$="/details"]:before {
     content: "info";
   }
 
-  nav.pills a[href$="/groups"]:before {
+  nav.pills.vertical a[href$="/groups"]:before {
     content: "groups";
   }
 
-  nav.pills a[href$="/task"]:before {
+  nav.pills.vertical a[href$="/task"]:before {
     content: "assignment_turned_in";
   }
 
-  nav.pills a[href$="/announcements"]:before {
+  nav.pills.vertical a[href$="/announcements"]:before {
     content: "announcement";
   }
 
-  nav.pills a[href$="/chat"]:before {
+  nav.pills.vertical a[href$="/chat"]:before {
     content: "chat";
   }
 
-  nav.pills a[href$="/conferencing"]:before {
+  nav.pills.vertical a[href$="/conferencing"]:before {
     content: "video_call";
   }
 
-  nav.pills a[href$="/consultation"]:before {
+  nav.pills.vertical a[href$="/consultation"]:before {
     content: "live_help";
   }
 
-  nav.pills a[href$="/files"]:before {
+  nav.pills.vertical a[href$="/files"]:before {
     content: "folder";
   }
 
-  nav.pills a[href$="/forum"]:before {
+  nav.pills.vertical a[href$="/forum"]:before {
     content: "forum";
   }
 
-  nav.pills a[href$="/gradebook"]:before {
+  nav.pills.vertical a[href$="/gradebook"]:before {
     content: "grading";
   }
 
-  nav.pills a[href$="/multimedia"]:before {
+  nav.pills.vertical a[href$="/multimedia"]:before {
     content: "movie";
   }
 
-  nav.pills a[href$="/poll"]:before {
+  nav.pills.vertical a[href$="/poll"]:before {
     content: "poll";
   }
 
-  nav.pills a[href$="/quiz"]:before {
+  nav.pills.vertical a[href$="/quiz"]:before {
     content: "fact_check";
   }
 
-  nav.pills a[href$="/survey"]:before {
+  nav.pills.vertical a[href$="/survey"]:before {
     content: "assignment";
   }
 
-  nav.pills a[href$="/scorm"]:before {
+  nav.pills.vertical a[href$="/scorm"]:before {
     content: "school";
   }
 
-  nav.pills a[href$="/web-lectures"]:before {
+  nav.pills.vertical a[href$="/web-lectures"]:before {
     content: "web";
   }
 
-  nav.pills a[href$="/ext-app"]:before {
+  nav.pills.vertical a[href$="/ext-app"]:before {
     content: "build";
   }
 
-  nav.pills a.selected,
-  nav.pills a:hover {
+  nav.pills.vertical a.selected,
+  nav.pills.vertical a:hover {
     border-radius: 0 100px 100px 0;
   }
 
