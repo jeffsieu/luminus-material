@@ -1,12 +1,14 @@
 /* ==UserStyle==
 @name           Luminus Material Retheme
 @namespace      github.com/openstyles/stylus
-@version        1.0.2
+@version        1.0.3
 @description    Adds Material Design icons and MD elements to module drawer in LumiNUS 
 @author         Jeff Sieu
 ==/UserStyle== */
 
 @-moz-document domain("luminus.nus.edu.sg") {
+  @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
   /* fallback */
   @font-face {
     font-family: "Material Icons";
@@ -28,6 +30,7 @@
     white-space: nowrap;
     word-wrap: normal;
     direction: ltr;
+    font-feature-settings: "liga";
     -webkit-font-feature-settings: "liga";
     -webkit-font-smoothing: antialiased;
   }
@@ -39,6 +42,10 @@
   h5,
   h6 {
     font-family: "Google Sans", sans-serif;
+  }
+
+  body {
+    font-family: "Roboto", sans-serif;
   }
 
   nav a,
